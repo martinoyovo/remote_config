@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1026809623002",
+    "project_id": "flutter-dlinks",
+    "storage_bucket": "flutter-dlinks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026809623002:android:85b344314b1d17e39190e3",
+        "android_client_info": {
+          "package_name": "always.goodapps.dynamic_links"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026809623002-3efug8jej91nhqv36tptt38pu025g5gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiQl21adLxVHI59vV4e8DHHWO6H7ghETA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026809623002-3efug8jej91nhqv36tptt38pu025g5gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
