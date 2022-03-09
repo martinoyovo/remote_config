@@ -1,6 +1,7 @@
 import 'package:dynamic_links/color_constant.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class RemoteConfigScreen extends StatefulWidget {
   static const routeName = '/remotePage';
@@ -47,24 +48,26 @@ class _RemoteConfigScreenState extends State<RemoteConfigScreen> {
           fit: BoxFit.cover,
         ),
       ),
-      child: Container(
-        height: 400,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(200)),
-          color: ColorConstant.fromHex(
-              _remoteConfig.getString('background_color').isNotEmpty
-                  ? _remoteConfig.getString('background_color')
-                  : _defaultBackgroundColor),
+      child: ClipPath(
+        clipper: OvalTopBorderClipper(),
+        child: Container(
+          height: 400,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: ColorConstant.fromHex(
+                _remoteConfig.getString('background_color').isNotEmpty
+                    ? _remoteConfig.getString('background_color')
+                    : _defaultBackgroundColor),
+          ),
+          child: Center(
+              child: Text(
+            _remoteConfig.getString('app_title').isNotEmpty
+                ? _remoteConfig.getString('app_title')
+                : _defaultAppTitle,
+            style: const TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+          )),
         ),
-        child: Center(
-            child: Text(
-          _remoteConfig.getString('app_title').isNotEmpty
-              ? _remoteConfig.getString('app_title')
-              : _defaultAppTitle,
-          style: const TextStyle(
-              color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
-        )),
       ),
     ));
   }
