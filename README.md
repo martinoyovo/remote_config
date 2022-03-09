@@ -1,10 +1,8 @@
 # Firebase Remote Config
 
-A new Flutter project.
+Firebase remote config example built with Flutter
 
 ## Getting Started
-
-Firebase remote config example built with Flutter
 
 A few resources to get you started if this is your first Flutter project:
 
