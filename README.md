@@ -1,10 +1,10 @@
-# dynamic_links
+# Firebase Remote Config
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Firebase remote config example built with Flutter
 
 A few resources to get you started if this is your first Flutter project:
 
