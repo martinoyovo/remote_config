@@ -2,6 +2,7 @@ import 'package:dynamic_links/remote_config_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+///FIREBASE INIT
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
